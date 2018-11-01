@@ -16,7 +16,7 @@ describe('plane', function () {
     expect(plane.flying).toBe(false)
   })
 
-  it('can take off', function(){
+  it('can take off', function () {
     plane.land()
     plane.takeOff()
     expect(plane.flying).toBe(true)

@@ -1,6 +1,7 @@
 function Airport () {
   this.hanger = []
   this.MAX_CAPACITY = 10
+  weather = Weather.new
 }
 
 Airport.prototype.land = function (plane) {
@@ -8,11 +9,11 @@ Airport.prototype.land = function (plane) {
     throw new Error('Too many planes!')
   }
   this.hanger.push(plane)
-  plane.land()
+  // plane.land()
 }
 
 Airport.prototype.takeOff = function (plane) {
-  plane.takeOff()
+  // plane.takeOff()
   index = this.hanger.indexOf(plane)
   this.hanger.splice(index)
 }
