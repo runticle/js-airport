@@ -8,9 +8,11 @@ Airport.prototype.land = function (plane) {
     throw new Error('Too many planes!')
   }
   this.hanger.push(plane)
+  plane.land()
 }
 
 Airport.prototype.takeOff = function (plane) {
+  plane.takeOff()
   index = this.hanger.indexOf(plane)
   this.hanger.splice(index)
 }

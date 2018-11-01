@@ -8,13 +8,13 @@ describe('Weather:', function () {
   })
 
   it('can be stormy', function () {
-    spyOn(Math, "random").and.returnValue(0.1);
+    spyOn(Math, 'random').and.returnValue(0.1)
     weather.weatherCalc()
     expect(weather.isStormy).toBe(true)
   })
 
   it('can be calm', function () {
-    spyOn(Math, "random").and.returnValue(0.6);
+    spyOn(Math, 'random').and.returnValue(0.6)
     weather.weatherCalc()
     expect(weather.isStormy).toBe(false)
   })

@@ -3,7 +3,7 @@
 var Airport = require('../src/airport.js')
 
 describe('airport', function () {
-  var plane = jasmine.createSpyObj('plane', ['', 'land'])
+  var plane = jasmine.createSpyObj('plane', ['takeOff', 'land'])
   //
   // spyOn(plane, '').and.returnValue(true);
   var airport
